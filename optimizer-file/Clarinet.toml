@@ -11,6 +11,10 @@ depends_on = []
 path = "contracts/fee-analysis.clar"
 depends_on = ["gas-optimizer"]
 
+[contracts.fee-predictor]
+path = "contracts/fee-predictor.clar"
+depends_on = ["gas-optimizer"]
+
 [repl.analysis]
 passes = ["check_checker"]
 
