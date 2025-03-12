@@ -1,0 +1,21 @@
+[project]
+name = "stacks-gas-optimizer"
+requirements = []
+costs_version = 2
+
+[contracts.gas-optimizer]
+path = "contracts/gas-optimizer.clar"
+depends_on = []
+
+[contracts.fee-analysis]
+path = "contracts/fee-analysis.clar"
+depends_on = ["gas-optimizer"]
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false

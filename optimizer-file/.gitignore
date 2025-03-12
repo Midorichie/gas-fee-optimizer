@@ -1,0 +1,20 @@
+# VS Code
+.vscode/
+
+# Node modules
+node_modules/
+
+# Clarinet files
+.cache/
+settings/Mainnet.toml
+settings/Testnet.toml
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# OS specific files
+.DS_Store
+Thumbs.db
